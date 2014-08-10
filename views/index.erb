@@ -1,10 +1,27 @@
 <html>
 	<head>
 		<title>Foodly</title>
+		<h1>Get your foodly on</h1>
 	</head>
 	<body>
 		<form id='allowedIngredients' action="/foodly" method="post">
 			<input name="allowedIngredients[]" placeholder=ingredients>
+				<select name="allergies">
+					<option value=></option>
+					<option value="393^Gluten-Free">Gluten-Free</option>
+					<option value="396^Dairy-Free">Dairy-Free</option>
+					<option value="394^Peanut-Free">Peanut-Free</option>
+					<option value="398^Seafood-Free">Seafood-Free</option>
+				</select>
+
+				<select name="diet">
+					<option value=></option>
+					<option value="386^Vegan">Vegan</option>
+					<option value="390^Pescetarian">Pescetarian</option>
+					<option value="388^Lacto vegetarian">Lacto vegetarian</option>
+					<option value="398^Ovo vegetarian">Ovo vegetarian</option>
+					<option value="387^Lacto-ovo vegetarian"> Lacto-ovo vegetarian</option>
+				</select>
 			<button type='submit'>Foodly me up</button>
 		</form>
 	</body>

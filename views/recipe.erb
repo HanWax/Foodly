@@ -1,7 +1,90 @@
 
 <html>
+		<% @recipe_name_list = @data["matches"].map{ |recipe| recipe["recipeName" ]} %>
+    	<% @ingredients_list = @data["matches"].map {|recipe| recipe["ingredients"]} %>
+    	<% @total_time = @data["matches"].map {|recipe| recipe["totalTimeInSeconds"]} %>
+    	<% @ratings = @data["matches"].map {|recipe| recipe["rating"]} %>
+    	<% @images = @data["matches"].map {|recipe| recipe["smallImageUrl"]} %>
+    	<% @id = @data["matches"].map {|recipe| recipe["id"]} %>
+
+	<h1><%= @recipe_name_list[0]%></h1>
 	<ul>
-		<%=@data["matches"].map{ |element| element["recipeName"]} %>
+		<li>Ingredients: <%= @ingredients_list[0].to_s%></li>
+		<li>Rating: <%= @ratings[0]%></li>
+		<li>Go to blog: <%= "https://www.yummly.co.uk/recipe/" + "#{@id[0]}"%></li>
+		<li>Time to make recipe: <%= @total_time[0].to_i / 60 %> minutes</li>
+	</ul>
+
+	<h1><%= @recipe_name_list[1]%></h1>
+	<ul>
+		<li>Ingredients: <%= @ingredients_list[1]%></li>
+		<li>Rating: <%= @ratings[1]%></li>
+		<li>Go to blog: <%= "https://www.yummly.co.uk/recipe/" + "#{@id[1]}"%></li>
+		<li>Time to make recipe: <%= @total_time[1].to_i / 60 %> minutes</li>
+	</ul>
+
+	<h1><%= @recipe_name_list[2]%></h1>
+	<ul>
+		<li>Ingredients: <%= @ingredients_list[2]%></li>
+		<li>Rating: <%= @ratings[2]%></li>
+		<li>Go to blog: <%= "https://www.yummly.co.uk/recipe/" + "#{@id[2]}"%></li>
+		<li>Time to make recipe: <%= @total_time[2].to_i / 60 %> minutes</li>
+	</ul>
+
+	<h1><%= @recipe_name_list[3]%></h1>
+	<ul>
+		<li>Ingredients: <%= @ingredients_list[3]%></li>
+		<li>Rating: <%= @ratings[3]%></li>
+		<li>Go to blog: <%= "https://www.yummly.co.uk/recipe/" + "#{@id[3]}"%></li>
+		<li>Time to make recipe: <%= @total_time[3].to_i / 60 %> minutes</li>
+	</ul>
+
+	<h1><%= @recipe_name_list[4]%></h1>
+	<ul>
+		<li>Ingredients: <%= @ingredients_list[4]%></li>
+		<li>Rating: <%= @ratings[4]%></li>
+		<li>Go to blog: <%= "https://www.yummly.co.uk/recipe/" + "#{@id[4]}"%></li>
+		<li>Time to make recipe: <%= @total_time[4].to_i / 60 %> minutes</li>
+	</ul>
+
+	<h1><%= @recipe_name_list[5]%></h1>
+	<ul>
+		<li>Ingredients: <%= @ingredients_list[5]%></li>
+		<li>Rating: <%= @ratings[5]%></li>
+		<li>Go to blog: <%= "https://www.yummly.co.uk/recipe/" + "#{@id[5]}"%></li>
+		<li>Time to make recipe: <%= @total_time[5].to_i / 60 %> minutes</li>
+	</ul>
+
+	<h1><%= @recipe_name_list[6]%></h1>
+	<ul>
+		<li>Ingredients: <%= @ingredients_list[6]%></li>
+		<li>Rating: <%= @ratings[6]%></li>
+		<li>Go to blog: <%= "https://www.yummly.co.uk/recipe/" + "#{@id[6]}"%></li>
+		<li>Time to make recipe: <%= @total_time[6].to_i / 60 %> minutes</li>
+	</ul>
+
+	<h1><%= @recipe_name_list[7]%></h1>
+	<ul>
+		<li>Ingredients: <%= @ingredients_list[7]%></li>
+		<li>Rating: <%= @ratings[7]%></li>
+		<li>Go to blog: <a href><%= "https://www.yummly.co.uk/recipe/" + "#{@id[7]}"%><a></li>
+		<li>Time to make recipe: <%= @total_time[7].to_i / 60 %> minutes</li>
+	</ul>
+
+	<h1><%= @recipe_name_list[8]%></h1>
+	<ul>
+		<li>Ingredients: <%= @ingredients_list[8]%></li>
+		<li>Rating: <%= @ratings[8]%></li>
+		<li>Go to blog: <%= "https://www.yummly.co.uk/recipe/" + "#{@id[8]}"%></li>
+		<li>Time to make recipe: <%= @total_time[8].to_i / 60 %> minutes</li>
+	</ul>
+
+	<h1><%= @recipe_name_list[9]%></h1>
+	<ul>
+		<li>Ingredients: <%= @ingredients_list[9]%></li>
+		<li>Rating: <%= @ratings[9]%></li>
+		<li>Go to blog: <%= "https://www.yummly.co.uk/recipe/" + "#{@id[9]}"%></li>
+		<li>Time to make recipe: <%= @total_time[9].to_i / 60 %> minutes</li>
 	</ul>
 </html>
 
