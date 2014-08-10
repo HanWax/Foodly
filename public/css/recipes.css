@@ -1,0 +1,33 @@
+body {
+	background-color: #eaded0;
+	font-family: "Courier New", Courier, monospace;
+	color: #eaded0;
+	font-size: 50px;
+	font-weight: bold;
+	margin: auto;
+	text-align: left;
+}
+h1 {
+	font-size: 50px;
+	font-weight: bold;
+}
+h2 {
+	text-align: justify;
+	color: black;
+	margin: auto;
+	font-size: 30px;
+	padding: 8px;
+}
+
+ul {
+	text-align: justify;
+	color: black;
+	font-size: 15px;
+	margin-left: 20px;
+	padding: 30px;
+}
+
+img {
+	text-align: left;
+	padding: 8px;
+}
