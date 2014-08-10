@@ -1,15 +1,19 @@
 body {
 	background-color: #eaded0;
 	font-family: "Courier New", Courier, monospace;
-	color: #eaded0;
 	font-size: 50px;
 	font-weight: bold;
 	margin: auto;
 	text-align: left;
+	padding: 20px;
 }
 h1 {
 	font-size: 50px;
 	font-weight: bold;
+	color: black;
+	border-bottom: thin solid white;
+	padding-bottom: 20px;
+	text-align: center;
 }
 h2 {
 	text-align: justify;
@@ -19,15 +23,24 @@ h2 {
 	padding: 8px;
 }
 
+section {
+	display: flex;
+	flex-direction: row ;
+}
+
 ul {
 	text-align: justify;
 	color: black;
 	font-size: 15px;
 	margin-left: 20px;
 	padding: 30px;
+	flex-grow: 2;
 }
 
 img {
 	text-align: left;
 	padding: 8px;
+	flex-grow: 1;
+	width: 100px;
+    height: 100px;
 }
