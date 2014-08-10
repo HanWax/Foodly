@@ -1,22 +1,77 @@
+
+
 body {
 	background-image: url(/images/foodie_background.png);
-	font-family: Helvetica Neue;
-	font-size: 30px;
-	text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+	background-repeat: repeat-x;
+	background-color: #eaded0;
+	font-family: "Courier New", Courier, monospace;
+	color: #eaded0;
+	font-size: 50px;
+	font-weight: bold;
 	margin: auto;
 	text-align: center;
+	text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+
 }
 
 h1 {
+	font-size: 100px;
 	margin: auto;
 	position: relative;
-  	top: 40%;
-  	transform: translateY(-50%)
+  	top: 30%;
+  	transform: translateY(-50%);
 }
 
-form {
+.pure-form {
+	display: flex;
+	float: left;
+	clear: both;
+	width: 500px;
+	height: 70px;
 	margin: auto;
+	padding: 10%;
 	position: relative;
   	top: 50%;
   	transform: translateY(-50%)
 }
+
+.pure-form label {
+	font-size: 30px;
+	text-align: left;
+	color: black;
+	text-shadow: none;
+}
+
+.pure-form input {
+	width: 400px;
+	height: 50px;
+	clear: both;
+	font-size: 15px;
+}
+
+.pure-form select {
+	height: 50px;
+	width: 400px;
+	clear: both;
+	font-size: 15px;
+	border-radius: 10px;
+}
+
+.pure-button {
+	font-family: "Courier New", Courier, monospace;
+	font-weight: bold;
+	box-shadow: 3px 3px 1px #888888;
+	background-color: #A4C639;
+	width: 400px;
+	height: 50px;
+	clear: both;
+	font-size: 15px;
+	padding: 10px;
+	margin-top: 20px;
+	margin-bottom: 100px;
+	border-radius: 10px;
+}
+
+
+
+
