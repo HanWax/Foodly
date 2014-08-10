@@ -1,5 +1,22 @@
 body {
-	background-image: url(images/foodie_background.png);
+	background-image: url(/images/foodie_background.png);
 	font-family: Helvetica Neue;
-	font-size: 300px;
+	font-size: 30px;
+	text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+	margin: auto;
+	text-align: center;
+}
+
+h1 {
+	margin: auto;
+	position: relative;
+  	top: 40%;
+  	transform: translateY(-50%)
+}
+
+form {
+	margin: auto;
+	position: relative;
+  	top: 50%;
+  	transform: translateY(-50%)
 }
