@@ -14,6 +14,19 @@
     	<% @images = @data["matches"].map {|recipe| recipe["smallImageUrls"]} %>
     	<% @id = @data["matches"].map {|recipe| recipe["id"]} %>
     
+    <h2>This is the test<h1>
+    <ul>
+    	<% @recipe_name_list.each do |name| %>
+    	<li><%= "You can make #{name}" %> </li>
+    <% end %>
+	</ul>
+
+ 	<ul>
+    	<% @ingredients_list.each do |name| %>
+    		<li><%= "#{name}" %> </li>
+    	<% end %>
+	</ul>
+
 
     <h2><%= @recipe_name_list[0]%></h2>
     <section>
