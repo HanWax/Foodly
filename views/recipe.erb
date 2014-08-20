@@ -7,16 +7,17 @@
 
 <body id="recipes">
 <h1>You've been foodly'd: </h1>
-		<% @recipe_name_list = @data["matches"].map{ |recipe| recipe["recipeName" ]} %>
+		<% @recipe_name_list = @data["matches"].map{ |recipe| recipe["recipeName"]} %>
     	<% @ingredients_list = @data["matches"].map {|recipe| recipe["ingredients"]} %>
     	<% @total_time = @data["matches"].map {|recipe| recipe["totalTimeInSeconds"]} %>
     	<% @ratings = @data["matches"].map {|recipe| recipe["rating"]} %>
     	<% @images = @data["matches"].map {|recipe| recipe["smallImageUrls"]} %>
     	<% @id = @data["matches"].map {|recipe| recipe["id"]} %>
     
+
     <h2><%= @recipe_name_list[0]%></h2>
     <section>
-		<img src="<%= @images[0].pop %>">
+		<img src="<%= @images[0].pop %>" class="images">
 		<ul>
 			<li>Ingredients: <%= @ingredients_list[0] %></li>
 			<li>Rating: <%= @ratings[0]%></li>
